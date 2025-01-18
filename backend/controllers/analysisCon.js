@@ -13,9 +13,9 @@ const modelName = "gpt-4o";
 // const upload = multer({ dest: "uploads/" }); // Middleware to handle image uploads
 // const app = express();
 // const PORT = 3000;
-
+const token = process.env.TOKEN;
 // Initialize OpenAI client
-const client = new OpenAI({ baseURL: endpoint, apiKey: process.env.TOKEN });
+const client = new OpenAI({ baseURL: endpoint, apiKey: token });
 
 // Define the GET route
 // app.get("/", (req, res) => {
